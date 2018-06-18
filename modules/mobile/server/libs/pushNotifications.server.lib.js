@@ -9,7 +9,8 @@ var chalk = require('chalk'),
   _ = require('lodash'),
   Promise = require('bluebird'),
   appUserLib = require(path.resolve('./modules/analytics/server/libs/appUser.server.lib')),
-  resque = require('coffee-resque').connect(config.redis);
+  resque = {};
+  // resque = require('coffee-resque').connect(config.redis);
 
 mongoose.Promise = Promise;
 

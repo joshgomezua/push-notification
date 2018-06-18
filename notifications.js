@@ -135,7 +135,7 @@ worker.on('poll', function(worker, queue) {
 });
 
 // Triggered before a Job is attempted.
-worker.on('job', function(worker, queue, job) {
+`worker`.on('job', function(worker, queue, job) {
   console.log(chalk.green('a job is going to run'));
 });
 

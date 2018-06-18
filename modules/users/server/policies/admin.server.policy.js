@@ -32,6 +32,7 @@ exports.invokeRolesPolicies = function () {
  */
 exports.isAllowed = function (req, res, next) {
   var role = (req.user) ? req.user.role : 'guest';
+  console.log(req.user);
 
   // Check for user roles
   acl.areAnyRolesAllowed(role, req.route.path, req.method.toLowerCase(), function (err, isAllowed) {
